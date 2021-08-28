@@ -19,10 +19,10 @@ function playPause() // Play Pause
     
 }  
 
-function ampliar()
+function ampliar() // Ampliar tamanho do player
 {
 
-    video.width = 500;
+    video.width = 600;
 
 }  
 
@@ -33,8 +33,11 @@ function reduzir() // Reduzir tamanho do player
 
 }
  
-function tamaNormal()
+function tamaNormal() // Tamanho normal da tela do player
 {
+
+    video.width = 300;
+
 }  
 
 function volMais()
