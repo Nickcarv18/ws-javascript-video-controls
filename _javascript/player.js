@@ -45,9 +45,12 @@ function volMais() // Aumentar volume do player
     video.volume += 0.1;
 } 
 
-function VolMenos()
+function volMenos() // Diminuir volume do player
 {
-}  
+
+    video.volume -= 0.1;
+
+} 
 
 function mute()
 {
