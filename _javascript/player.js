@@ -7,8 +7,16 @@ function telaCheia() //Tela Cheia
 
 }  
 
-function playPause()
+function playPause() // Play Pause
 {
+    
+    if (video.paused) {
+        video.play();
+    }
+    else{
+        video.pause()
+    }
+    
 }  
 
 function ampliar()
