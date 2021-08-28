@@ -1,0 +1,89 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.nav-link.active{
+    color: #003060;
+    text-shadow:  0.1em 0.1em 0.2em #68BBE3;
+}
+
+a:hover{
+    color: #003060 !important;
+    text-shadow:  0.1em 0.1em 0.2em #68BBE3;
+    border-radius: 3px;
+}
+
+.img-topo-quem-somos {
+    background: url('/_imagens/img-topo-quemSomos.jpg');
+    height: 400px;
+}
+
+.titulo{
+    color: #003060;
+    text-shadow:  0.1em 0.1em 0.2em #68BBE3;
+}
+
+.text-color{
+    color: #656666c5;
+    text-align: end;
+}
+
+.text-contatos{
+    text-align: justify;
+}
+
+.paragrafo-sobrenos{
+    text-align: justify;
+}
+
+.transbordar{
+    margin-top: 10px;
+    overflow: auto;
+}
+
+button.botao-submit-modal{
+    background-color: #003060;
+    color: #68BBE3;
+}
+
+.top{
+    background-color: #003060;
+    color: #68BBE3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.linha-vertical{
+    border: 1px solid #003060;
+    background-color: #003060;
+}
+
+i.social-icon{
+    color: #0E86D4;
+    font-size: 8vw;
+}
+
+h3.social-icon{
+  font-size: 4vw;
+}
+
+footer a:hover{
+    text-align: center;
+    border-radius: 3px;
+}
+
+.footer-title{
+    text-align: center;
+    background-color: #003060;
+    border-radius: 20px;
+    color: #68BBE3;
+    padding: 10px;
+}
+
