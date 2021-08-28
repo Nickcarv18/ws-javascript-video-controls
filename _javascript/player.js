@@ -1,5 +1,7 @@
 var video = document.getElementById("playerCustomizado");
 
+
+
 function telaCheia() //Tela Cheia
 {      
 
@@ -10,7 +12,7 @@ function telaCheia() //Tela Cheia
 function playPause() // Play Pause
 {
     
-    if (video.paused) {
+    if (video.paused || video.ended) {
         video.play();
     }
     else{
