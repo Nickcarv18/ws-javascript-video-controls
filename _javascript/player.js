@@ -21,6 +21,9 @@ function playPause() // Play Pause
 
 function ampliar()
 {
+
+    video.width = 500;
+
 }  
 
 function reduzir() // Reduzir tamanho do player
