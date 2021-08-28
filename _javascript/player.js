@@ -40,8 +40,9 @@ function tamaNormal() // Tamanho normal da tela do player
 
 }  
 
-function volMais()
+function volMais() // Aumentar volume do player
 {
+    video.volume += 0.1;
 } 
 
 function VolMenos()
@@ -49,5 +50,5 @@ function VolMenos()
 }  
 
 function mute()
-{      
+{
 } 
