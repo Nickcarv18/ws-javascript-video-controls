@@ -36,7 +36,7 @@ function reduzir() // Reduzir tamanho do player
 function tamaNormal() // Tamanho normal da tela do player
 {
 
-    video.width = 300;
+    video.width = 410;
 
 }  
 
