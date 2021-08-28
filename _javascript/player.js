@@ -52,6 +52,13 @@ function volMenos() // Diminuir volume do player
 
 } 
 
-function mute()
-{
+function mute() // Mutar e desmutar volume do player
+{      
+
+    if(video.muted || video.volume === 0){
+        video.volume = 1;
+    }else{
+        video.volume = 0;
+    }
+
 } 
