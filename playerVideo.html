@@ -1,375 +1,425 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player de Vídeo</title>
-    
-  <!-- Style -->
 
-  <link rel="stylesheet" href="/_css/style.css">
+    <!-- Style -->
 
-  <!-- Link Fonte -->
+    <link rel="stylesheet" href="/_css/style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Link Fonte -->
 
-  <!-- Link bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <div class="container-fluid">
-          <a class="logo navbar-brand" href="#">
-            <img src="/_imagens/Plugin_logo.svg" alt="Logo da empresa" width="100">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
-            aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class=" menu navbar-collapse collapse" id="navbarsExample01">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-  
-              <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Departamentos
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <a class="logo navbar-brand" href="#">
+                    <img src="/_imagens/Plugin_logo.svg" alt="Logo da empresa" width="100">
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Hardware</a></li>
-                  <li><a class="dropdown-item" href="#">Gamer</a></li>
-                  <li><a class="dropdown-item" href="#">TVs</a></li>
-                  <li><a class="dropdown-item" href="#">Celulares & tablets</a></li>
-                  <li><a class="dropdown-item" href="#">Computadores</a></li>
-                  <li><a class="dropdown-item" href="#">Áudio</a></li>
-                  <li><a class="dropdown-item" href="#">Periféricos</a></li>
-                  <li><a class="dropdown-item" href="#">Conectividades</a></li>
-                  <li><a class="dropdown-item" href="#">Projetores</a></li>
-                  <li><a class="dropdown-item" href="#">Geek</a></li>
-                  <li><a class="dropdown-item" href="#">Smart Home</a></li>
-                </ul>
-              </div>
-  
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Quem somos</a>
-              </li>
-  
-              <li class="nav-item">
-                <a class="nav-link" href="#">Institucional</a>
-              </li>
-  
-              <li class="nav-item">
-                <a class="nav-link" href="#">Minha conta</a>
-              </li>
-  
-              <li class="nav-item">
-                <a type="button" data-bs-toggle="modal" data-bs-target="#modal-form" class="nav-link" href="#"><i
-                    class="far fa-comment-dots"></i></a>
-  
-                <div class="modal fade" id="modal-form" tabindex="-1" aria-labelledby="modal-formLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-  
-                        <div class="d-flex">
-  
-                          <div class="formulario p-4">
-                            <h2 class="titulo mb-4">Lorem Ipsum</h2>
-  
-                            <p class="text-contatos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam error
-                              mollitia blanditiis minus cumque reiciendis odit accusantium vero tenetur ab maiores ratione
-                              eligendi recusandae, voluptas autem ipsa temporibus voluptatibus inventore? Lorem ipsum dolor
-                              sit amet consectetur adipisicing elit. Dolores eius impedit ducimus voluptate facere odit dicta
-                              quisquam repudiandae quaerat ut.</p>
-      
-                            <div class="row g-3 mt-2">
-                              <div class="col-sm-6">
-                                <label for="nome" class="form-label">NOME</label>
-                                <input type="text" class="form-control" id="nome" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                  O Nome é obrigatório.
-                                </div>
-                              </div>
-      
-                              <div class="col-sm-6">
-                                <label for="email" class="form-label">E-MAIL</label>
-                                <input type="text" class="form-control" id="email" required>
-                                <div class="invalid-feedback">
-                                  O E-mail é obrigatório.
-                                </div>
-                              </div>
-      
-                              <div class="col-sm-6">
-                                <label for="celular" class="form-label">CELULAR</label>
-                                <input type="text" class="form-control" id="celular" required
-                                  onkeypress="$(this).mask('(00) 0000-00009')">
-                                <div class="invalid-feedback">
-                                  O celular é obrigatório.
-                                </div>
-                              </div>
-      
-                              <div class="col-sm-6">
-                                <label for="assunto" class="form-label">ASSUNTO</label>
-                                <select class="form-select" aria-label="Default select example">
-                                  <option selected>Escolha uma opção</option>
-                                  <option value="1">Reclamação</option>
-                                  <option value="2">Sugestão</option>
-                                  <option value="3">Dúvida</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                  O campo é obrigatório.
-                                </div>
-                              </div>
-      
-                              <div class="col-12">
-                                <label for="mensagem" class="form-label">MENSAGEM</label>
-                                <div class="input-group has-validation">
-                                  <div class="input-group">
-                                    <textarea class="form-control" id="mensagem" required></textarea>
-                                  </div>
-                                  <div class="invalid-feedback">
-                                    Esse campo é obrigatório.
-                                  </div>
-                                </div>
-                              </div>
-      
-                              <p class="text-color">*TODOS OS ITENS SÃO OBRIGATÓRIOS</p>
-      
-                              <div class="input-modal my-md-2 my-2">
-                                <button type="submit"
-                                  class="botao-submit-modal btn btn-md btn-lg border-0 w-25">Enviar</button>
-                              </div>
-                            </div>
-      
-                          </div>
-  
-                          <div class="linha-vertical"></div>
-  
-                        <div class="redes-sociais  p-4">
-                          <h2 class="titulo mb-4">Lorem Ipsum</h2>
-  
-                          <p class="text-contatos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam error
-                            mollitia blanditiis minus cumque reiciendis odit accusantium vero tenetur ab maiores ratione
-                            eligendi recusandae, voluptas autem ipsa temporibus voluptatibus inventore? Lorem ipsum dolor
-                            sit amet consectetur adipisicing elit. Dolores eius impedit ducimus voluptate facere odit dicta
-                            quisquam repudiandae quaerat ut.
-                          </p>
-    
-                          <div class="row g-3 mt-2">
-                            <div class="social">
-    
-                              <div class="face">
-                                <h3 class="social-icon text-center">
-                                  <i class="fab fa-facebook-square social-icon me-5"></i>
-                                  PLUGIN SHOP
-                                </h3>
-                              </div>
-    
-                              <div class="insta">
-                                <h3 class="social-icon text-center">
-                                  <i class="fab fa-instagram-square social-icon"></i>
-                                  @PLUGINSHOP
-                                </h3>
-                              </div>
-    
-                              <div class="twitter">
-                                <h3 class="social-icon text-center">
-                                  <i class="fab fa-twitter-square social-icon"></i>
-                                  @PLUGINSHOP
-                                </h3>
-                              </div>
-                            </div>
-                          </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" menu navbar-collapse collapse" id="navbarsExample01">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Departamentos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Hardware</a></li>
+                                <li><a class="dropdown-item" href="#">Gamer</a></li>
+                                <li><a class="dropdown-item" href="#">TVs</a></li>
+                                <li><a class="dropdown-item" href="#">Celulares & tablets</a></li>
+                                <li><a class="dropdown-item" href="#">Computadores</a></li>
+                                <li><a class="dropdown-item" href="#">Áudio</a></li>
+                                <li><a class="dropdown-item" href="#">Periféricos</a></li>
+                                <li><a class="dropdown-item" href="#">Conectividades</a></li>
+                                <li><a class="dropdown-item" href="#">Projetores</a></li>
+                                <li><a class="dropdown-item" href="#">Geek</a></li>
+                                <li><a class="dropdown-item" href="#">Smart Home</a></li>
+                            </ul>
                         </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Quem somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Institucional</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Minha conta</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-form" class="nav-link"
+                                href="#"><i class="far fa-comment-dots"></i></a>
+
+                            <div class="modal fade" id="modal-form" tabindex="-1" aria-labelledby="modal-formLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="d-flex">
+
+                                                <div class="formulario p-4">
+                                                    <h2 class="titulo mb-4">Lorem Ipsum</h2>
+
+                                                    <p class="text-contatos">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Aperiam error
+                                                        mollitia blanditiis minus cumque reiciendis odit accusantium
+                                                        vero tenetur ab maiores ratione
+                                                        eligendi recusandae, voluptas autem ipsa temporibus voluptatibus
+                                                        inventore? Lorem ipsum dolor
+                                                        sit amet consectetur adipisicing elit. Dolores eius impedit
+                                                        ducimus voluptate facere odit dicta
+                                                        quisquam repudiandae quaerat ut.</p>
+
+                                                    <div class="row g-3 mt-2">
+                                                        <div class="col-sm-6">
+                                                            <label for="nome" class="form-label">NOME</label>
+                                                            <input type="text" class="form-control" id="nome"
+                                                                placeholder="" value="" required>
+                                                            <div class="invalid-feedback">
+                                                                O Nome é obrigatório.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <label for="email" class="form-label">E-MAIL</label>
+                                                            <input type="text" class="form-control" id="email" required>
+                                                            <div class="invalid-feedback">
+                                                                O E-mail é obrigatório.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <label for="celular" class="form-label">CELULAR</label>
+                                                            <input type="text" class="form-control" id="celular"
+                                                                required onkeypress="$(this).mask('(00) 0000-00009')">
+                                                            <div class="invalid-feedback">
+                                                                O celular é obrigatório.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <label for="assunto" class="form-label">ASSUNTO</label>
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Escolha uma opção</option>
+                                                                <option value="1">Reclamação</option>
+                                                                <option value="2">Sugestão</option>
+                                                                <option value="3">Dúvida</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                O campo é obrigatório.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <label for="mensagem" class="form-label">MENSAGEM</label>
+                                                            <div class="input-group has-validation">
+                                                                <div class="input-group">
+                                                                    <textarea class="form-control" id="mensagem"
+                                                                        required></textarea>
+                                                                </div>
+                                                                <div class="invalid-feedback">
+                                                                    Esse campo é obrigatório.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="text-color">*TODOS OS ITENS SÃO OBRIGATÓRIOS</p>
+
+                                                        <div class="input-modal my-md-2 my-2">
+                                                            <button type="submit"
+                                                                class="botao-submit-modal btn btn-md btn-lg border-0 w-25">Enviar</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="linha-vertical"></div>
+
+                                                <div class="redes-sociais  p-4">
+                                                    <h2 class="titulo mb-4">Lorem Ipsum</h2>
+
+                                                    <p class="text-contatos">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Aperiam error
+                                                        mollitia blanditiis minus cumque reiciendis odit accusantium
+                                                        vero tenetur ab maiores ratione
+                                                        eligendi recusandae, voluptas autem ipsa temporibus voluptatibus
+                                                        inventore? Lorem ipsum dolor
+                                                        sit amet consectetur adipisicing elit. Dolores eius impedit
+                                                        ducimus voluptate facere odit dicta
+                                                        quisquam repudiandae quaerat ut.
+                                                    </p>
+
+                                                    <div class="row g-3 mt-2">
+                                                        <div class="social">
+
+                                                            <div class="face">
+                                                                <h3 class="social-icon text-center">
+                                                                    <i
+                                                                        class="fab fa-facebook-square social-icon me-5"></i>
+                                                                    PLUGIN SHOP
+                                                                </h3>
+                                                            </div>
+
+                                                            <div class="insta">
+                                                                <h3 class="social-icon text-center">
+                                                                    <i class="fab fa-instagram-square social-icon"></i>
+                                                                    @PLUGINSHOP
+                                                                </h3>
+                                                            </div>
+
+                                                            <div class="twitter">
+                                                                <h3 class="social-icon text-center">
+                                                                    <i class="fab fa-twitter-square social-icon"></i>
+                                                                    @PLUGINSHOP
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
                 </div>
-              </li>
-  
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-              </li>
-  
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+            </div>
+        </nav>
     </header>
-  
-    <main>    
+
+    <main>
         <div class="img-topo-quem-somos">
         </div>
-  
+
         <section class="quemSomos">
             <div class="sobre-nos mt-4 container">
                 <h2 class="titulo">
-                  <i class="fas fa-cubes"></i>
-                  PLUGIN
+                    <i class="fas fa-cubes"></i>
+                    PLUGIN
                 </h2>
-                 
-                <p class="paragrafo-sobrenos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero et arcu, cras diam et, diam faucibus metus, ullamcorper. Sit odio blandit adipiscing phasellus vulputate neque. Purus arcu nascetur suscipit enim purus nulla. Mattis tortor mauris id adipiscing est magna gravida sed. In libero suspendisse eros volutpat sed. Iaculis turpis eu, nec elementum gravida. Magnis malesuada quisque congue orci arcu et, tempus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quas. Sapiente dignissimos voluptatum quia accusamus non ut ea amet aliquid, animi, perspiciatis consequatur doloremque in voluptas veniam fuga libero molestiae!</p>
-  
-                <p class="paragrafo-sobrenos">Amet, ac urna arcu id adipiscing quis sit parturient. In dignissim non id elementum, faucibus. Nulla tincidunt vitae pretium praesent mauris, maecenas netus urna lacus. Mattis nunc, sollicitudin erat cursus feugiat. Ullamcorper augue mauris pharetra, sagittis, commodo. Malesuada interdum nisl mi sed vitae pellentesque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quas. Sapiente dignissimos voluptatum quia accusamus non ut ea amet aliquid, animi, perspiciatis consequatur doloremque in voluptas veniam fuga libero molestiae!</p>
+
+                <p class="paragrafo-sobrenos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero et arcu,
+                    cras diam et, diam faucibus metus, ullamcorper. Sit odio blandit adipiscing phasellus vulputate
+                    neque. Purus arcu nascetur suscipit enim purus nulla. Mattis tortor mauris id adipiscing est magna
+                    gravida sed. In libero suspendisse eros volutpat sed. Iaculis turpis eu, nec elementum gravida.
+                    Magnis malesuada quisque congue orci arcu et, tempus. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Deleniti, quas. Sapiente dignissimos voluptatum quia accusamus non ut ea amet
+                    aliquid, animi, perspiciatis consequatur doloremque in voluptas veniam fuga libero molestiae!</p>
+
+                <p class="paragrafo-sobrenos">Amet, ac urna arcu id adipiscing quis sit parturient. In dignissim non id
+                    elementum, faucibus. Nulla tincidunt vitae pretium praesent mauris, maecenas netus urna lacus.
+                    Mattis nunc, sollicitudin erat cursus feugiat. Ullamcorper augue mauris pharetra, sagittis, commodo.
+                    Malesuada interdum nisl mi sed vitae pellentesque.Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Deleniti, quas. Sapiente dignissimos voluptatum quia accusamus non ut ea amet aliquid, animi,
+                    perspiciatis consequatur doloremque in voluptas veniam fuga libero molestiae!</p>
+
+                <div class="playerVideo mb-4 mt-5 text-center">
+                    <video id="playerCustomizado" with="410" controls poster="_imagens/Thumbnail.png">
+                        <source src="_media/Plugin_Institucional.mp4" type="video/mp4">
+                        <p>O navegador não suporta essa tecnologia.</p>
+                    </video>
+
+                    <div class="botao-grupo">
+                        <button type="button" class="btn btn-dark" onclick="playPause()">Play/Pause</button>
+                        <button type="button" class="btn btn-dark" onclick="ampliar()">Ampliar</button>
+                        <button type="button" class="btn btn-dark" onclick="reduzir()">Reduzir</button>
+                        <button type="button" class="btn btn-dark" onclick="tamaNormal()">Tamanho Normal</button>
+                        <button type="button" class="btn btn-dark" onclick="telaCheia()">Tela Cheia</button>
+                        <button type="button" class="btn btn-dark" onclick="volMais()">Volume +</button>
+                        <button type="button" class="btn btn-dark" onclick="volMenos()">Volume -</button>
+                        <button type="button" class="btn btn-dark" onclick="mute()">Mute</button>
+                    </div>
+                </div>
             </div>
-  
+
             <div class="dadosplugin mb-4">
                 <img src="/_imagens/dados-plugin.jpg" class="img-fluid">
             </div>
-  
+
             <div class="parceiros">
-              <h2 class="container titulo">
-                  <i class="fas fa-cubes"></i>
-                  PARCEIROS OFICIAIS
-              </h2>
-  
-              <div class="row text-center mt-4 mb-4 container-fluid">
-                  <div class="col">
-                      <img src="/_imagens/LOGO_HYPERX.png" alt="LOGO HYPERX" class="img-fluid">
-                  </div>
-                  
-                  <div class="col">
-                      <img src="/_imagens/LOGO_NVIDIA.png" alt="LOGO NVIDIA" class="img-fluid">
-                  </div>
-                  
-                  <div class="col">
-                      <img src="/_imagens/LOGO_XBOX.png" alt="LOGO XBOX" class="img-fluid"> 
-                  </div>
-  
-                  <div class="col">
-                      <img src="/_imagens/LOGO_INTEL.png" alt="LOGO INTEL" class="img-fluid">
-                  </div>
-                      
-                  <div class="col">
-                      <img src="/_imagens/LOGO_LONGITECH.png" alt="LOGO LONGITECH" class="img-fluid">
-                  </div>
-              </div>
-          </div>
+                <h2 class="container titulo">
+                    <i class="fas fa-cubes"></i>
+                    PARCEIROS OFICIAIS
+                </h2>
+
+                <div class="row text-center mt-4 mb-4 container-fluid">
+                    <div class="col">
+                        <img src="/_imagens/LOGO_HYPERX.png" alt="LOGO HYPERX" class="img-fluid">
+                    </div>
+
+                    <div class="col">
+                        <img src="/_imagens/LOGO_NVIDIA.png" alt="LOGO NVIDIA" class="img-fluid">
+                    </div>
+
+                    <div class="col">
+                        <img src="/_imagens/LOGO_XBOX.png" alt="LOGO XBOX" class="img-fluid">
+                    </div>
+
+                    <div class="col">
+                        <img src="/_imagens/LOGO_INTEL.png" alt="LOGO INTEL" class="img-fluid">
+                    </div>
+
+                    <div class="col">
+                        <img src="/_imagens/LOGO_LONGITECH.png" alt="LOGO LONGITECH" class="img-fluid">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-  
-   <!-- Footer -->
-   <footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom align-items-center">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Se conecte com a gente nas redes sociais:</span>
-      </div>
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div class="redes-sociais">
-        <!-- Facebook -->
-        <a class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-  
-    <!-- Section: Links  -->
-    <section class="Links">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <img src="_imagens/Plugin_logo.svg" alt="Logo da empresa" width="250" height="200">
-            </h6>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="footer-title text-uppercase mb-4">
-              Institucional
-            </h6>
-            <p>
-              <a href="#" class="text-reset">POLÍTICAS DO SITE</a>
-            </p>
-            <p>
-              <a href="#" class="text-reset">POLÍTICAS DE PRIVACIDADE</a>
-            </p>
-            <p>
-              <a href="#" class="text-reset">CÓDIGO DE DEFESA DO CONSUMIDOR</a>
-            </p>
-            <p>
-              <a href="#" class="text-reset">TRABALHE CONOSCO</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="footer-title text-uppercase mb-4">
-              Contatos
-            </h6>
-  
-            <p><i class="fas fa-home me-3"></i>Avenida Coral, 251 - Sant/SP</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              PLUGIN@contato-PLUGIN.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> (11) 99145-9878</p>
-            <p><i class="fas fa-print me-3"></i> (11) 3547-5585</p>
-          </div>
-          <!-- Grid column -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom align-items-center">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Se conecte com a gente nas redes sociais:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="redes-sociais">
+                <!-- Facebook -->
+                <a class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="Links">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="_imagens/Plugin_logo.svg" alt="Logo da empresa" width="250" height="200">
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="footer-title text-uppercase mb-4">
+                            Institucional
+                        </h6>
+                        <p>
+                            <a href="#" class="text-reset">POLÍTICAS DO SITE</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">POLÍTICAS DE PRIVACIDADE</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">CÓDIGO DE DEFESA DO CONSUMIDOR</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">TRABALHE CONOSCO</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="footer-title text-uppercase mb-4">
+                            Contatos
+                        </h6>
+
+                        <p><i class="fas fa-home me-3"></i>Avenida Coral, 251 - Sant/SP</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            PLUGIN@contato-PLUGIN.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> (11) 99145-9878</p>
+                        <p><i class="fas fa-print me-3"></i> (11) 3547-5585</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: #003060;">
+            © 2021 Copyright:
+            <a class="text-light" href="#">PLUGIN</a>
         </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: #003060;">
-      © 2021 Copyright:
-      <a class="text-light" href="#">PLUGIN</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-  
-  <!-- Script JS-->
-  <script src="https://kit.fontawesome.com/8b7c7f9a84.js" crossorigin="anonymous"></script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Script JS-->
+    <script src="_javascript/player.js"></script>
+
+    <script src="https://kit.fontawesome.com/8b7c7f9a84.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-  <!-- Script JS-->
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <!-- Script JS-->
+</body>
+
 </html>
