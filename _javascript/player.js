@@ -23,8 +23,11 @@ function ampliar()
 {
 }  
 
-function reduzir()
+function reduzir() // Reduzir tamanho do player
 {  
+
+    video.width = 300;
+
 }
  
 function tamaNormal()
